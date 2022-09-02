@@ -21,7 +21,7 @@ let food = 'Tacos';
 // 9 - Create a variable called `pets` and set it to the value of the number of pets you have
 let pets = 1;
 // 10 - Create a variable called `friendsPets` and assign it the value of the number of pets your friend has
-let friendsPets = 2;
+let friendsPets = 5;
 // 11 - Add two pets to your `pets` variable
 pets += 2;
 // 12 - Create a constant variable called `allowedPets` and set it to a number value of your choice
@@ -36,7 +36,7 @@ if (adventurous === true) {
 
 // 14 - Create a compound conditional: if luckyNumber is 2 and adventurous is true,
 // console log "Roll the dice!"
-if (luckyNumber = 2 && adventurous === true) {
+if (luckyNumber === 2 && adventurous === true) {
     console.log('Roll the dice!');
 }
 // 15 - Write a conditional that console logs "I can have more pets!" 
@@ -61,10 +61,12 @@ if (pets < allowedPets) {
 let mostPets = 0;
 if (pets < friendsPets) {
     mostPets = friendsPets;
+    console.log('My friend has the most pets with:', mostPets);
 } else if (pets > friendsPets) {
     mostPets = pets;
+    console.log('I have the most pets with:', mostPets);
 }
-console.log(mostPets);
+
 // 17 - Write a *switch* statement that logs:
 //      "First is the worst" if your lucky number is 1
 //      "Second is the best" if your lucky number is 2
@@ -94,5 +96,5 @@ if (adventurous === true) {
     console.log('How about we stay home?');
 };
 
-adventurous === true ? 'Adventures are great!' : 'How about we stay home?';
+adventurous === true ? console.log('Adventures are great!') : console.log('How about we stay home?');
 
